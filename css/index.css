@@ -1,0 +1,41 @@
+@import "header.css";
+@import "main.css";
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    background: #f7f7f7; /* Цвет фона */
+}
+
+body {
+    min-width: 320px; /* !!! Для того, щоб не було горизонтального скролу */
+}
+
+.montserrat-light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.wrapper {
+    max-width: 1170px; /* !!! Для того, щоб не було горизонтального скролу */
+    margin: auto; /* Выравниваем по центру */
+}
+
+@media (max-width: 1170px) {
+
+}

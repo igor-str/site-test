@@ -1,0 +1,290 @@
+main {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.0625rem;
+    color: #000000;
+}
+
+/*Код для слайдеру*/
+.slider {
+    margin: 30px 0 55px 0;
+    background-image: url("images/slider-1.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 41.0256%;
+    position: relative;
+}
+.text-slider {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    height: 100%;
+}
+
+/*для вертикального вирівнювання тексту по центру не знаючи висоти елементу*/
+.text-slider .text-for-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-button {
+    width: 110px;
+    min-height: 40px;
+    background-color: #be926f;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+/*Код для групи товарів*/
+.box-for-products h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.group-for-products {
+    display: flex; /*це контейнер для блоків товарів*/
+}
+
+.product-items {
+    border: solid 1px #e6e6e6;
+    padding: 25px 40px 20px 40px;
+    text-align: center;
+}
+
+.product-items .product-title{
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.product-items .product-desc{
+    font-size: 12px;
+    color: #999999;
+    padding-bottom: 10px;
+}
+
+.product-items .photo-for-products{
+    border: solid 1px #ffe0cb;
+    position: relative; /*для позиціонування блоку по наведенні мишки*/
+}
+
+.product-items .product-price{
+    font-size: 20px;
+    color: #be926f;
+    padding-top: 10px;
+}
+.product-items .product-price-old{ /*це для нижнього блоку товарів зі знижкою*/
+    font-size: 20px;
+    color: #999999;
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+.box-for-product-price { /*це для нижнього блоку товарів зі знижкою*/
+    padding-top: 10px;
+}
+
+/*Товарні позиції по наведенню*/
+.product-actions {
+    position: absolute; /*для позиціонування блоку по наведенні мишки*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.product-actions .wrapper-btn-group {
+    width: 130px;
+    height: 85px;
+    align-self: center;
+}
+
+.wrapper-btn-group button {
+    width: 100%;
+    height: 40px;
+    background-color: #be926f;
+    border: none;
+    color: #ffffff;
+    font-size: 13px;
+}
+/*обгортка, для вирівнювання посилань*/
+.wrapper-links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.wrapper-links .like, .wrapper-links .sort, .wrapper-links .resize-full {
+    height: 25px;
+    width: 25px;
+    border: solid 1px #be926f;
+    content: "";
+}
+.wrapper-links .like {
+     background: url("images/like.png") no-repeat center;
+ }
+.wrapper-links .sort {
+    background: url("images/sort.png") no-repeat center;
+}
+.wrapper-links .resize-full {
+    background: url("images/resize-full.png") no-repeat center;
+}
+
+
+
+/*Блок для знижок*/
+.box-for-sale {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.sale, .hot-sale {
+    border: solid 1px #e6e6e6;
+    width: 50%;
+}
+
+.sale {
+    margin-right: 15px;
+}
+.hot-sale {
+    margin-left: 15px;
+}
+.wrapper-product-sale {
+    display: flex;
+}
+
+.product-sale-item {
+    display: flex;
+    padding: 20px;
+}
+
+.product-sale-item a {
+    border: solid 1px #ffe0cb;
+    margin-right: 20px;
+}
+
+.wrapper-desc-product-sale-item { /*обгортра для текстових блоків в колонці*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product-sale-desc {
+    color: #999999;
+    font-size: 12px;
+}
+
+.product-sale-name {
+    color: #232323;
+    font-size: 17px;
+}
+
+.product-sale-price {
+    color: #999999;
+    font-size: 14px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999999;
+    padding-right: 5px;
+}
+
+.new-price {
+    color: #be926f;
+}
+
+.wrapper-hot-sale { /*обгортка для блоку з гарячою скидкою*/
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.desc-hot-sale {
+    font-size: 12px;
+    color: #999999;
+    background: url("images/line-sale.png") no-repeat left;
+    padding-left: 30px;
+}
+.name-hot-sale {
+    font-size: 20px;
+    padding: 10px 0;
+}
+.price-hot-sale {
+    font-size: 16px;
+    color: #be926f;
+}
+
+
+
+/*Блок для брендів*/
+.box-for-brands {
+    margin-top: 25px;
+    border: solid 1px #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+
+
+/*Блок для брендів*/
+.box-for-bestseller{
+    margin-top: 25px;
+}
+
+.box-for-bestseller h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+
+/*Блок для слайдера-каруселі*/
+.box-for-slider-caruselle {
+    padding-top: 60px;
+}
+
+.box-for-slider-caruselle h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px 0 30px 0;
+}
+.wrapper-slider-caruselle {
+    display: flex;
+}
+
+.slider-caruselle-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-category {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #7f9f5d;
+    padding-top: 30px;
+}
+
+.slder-product-name {
+    font-size: 18px;
+    padding: 30px 0 25px 0;
+}
+
+.slider-product-date {
+    font-size: 14px;
+    color: #999999;
+    background: url("images/slider-clock.png") no-repeat left;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
