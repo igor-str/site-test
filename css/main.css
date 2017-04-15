@@ -250,7 +250,7 @@ main {
 
 /*Блок для слайдера-каруселі*/
 .box-for-slider-caruselle {
-    padding-top: 60px;
+    padding: 60px 0;
 }
 
 .box-for-slider-caruselle h2 {
@@ -267,6 +267,19 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 15px;
+}
+
+.slider-caruselle-items:first-child {
+    margin-left: 0;
+}
+
+.slider-caruselle-items:last-child {
+    margin-right: 0;
+}
+
+.slider-caruselle-items img {
+    border: 1px solid #ffe0cb;
 }
 
 .product-category {
@@ -276,9 +289,12 @@ main {
     padding-top: 30px;
 }
 
-.slder-product-name {
+.slider-product-name {
     font-size: 18px;
     padding: 30px 0 25px 0;
+    width: 272px;
+    height: 40px;
+    text-align: center
 }
 
 .slider-product-date {
@@ -287,4 +303,198 @@ main {
     background: url("images/slider-clock.png") no-repeat left;
     padding-left: 20px;
     margin-bottom: 15px;
+}
+
+.slider-caruselle-join { /*це блок-зв'язок для слайдера каруселі*/
+    background: #e6e6e6;
+    height: 1px;
+    width: 100%;
+}
+
+.slider-caruselle-join:hover {
+    background: #be926f;
+    transition: 1s;
+}
+
+
+
+
+/*блок для відгуків*/
+.box-for-testimonials{
+    background: #292929;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.box-for-testimonials h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffffff;
+    padding: 60px 0 30px 0;
+    margin: 0;
+}
+
+.testimonials-line {
+    align-self: center;
+    height: 2px;
+    width: 20px;
+    background: #be926f;
+}
+
+.testimonials-desc {
+    text-align: center;
+    font-size: 17px;
+    color: #cccccc;
+    padding: 15px 30px 25px 30px;
+    line-height: 1.75rem;
+}
+
+.testimonials-quadrate {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    align-self: center;
+    border: 1px solid #be926f;
+    transform: rotate(45deg);
+}
+
+.testimonials-quadrate:hover {
+    transform: rotate(315deg);
+    transition: 1s;
+}
+
+/*-----------------блок для емайл підписки-------------------*/
+.box-for-subscribe {
+    display: flex;
+    padding: 90px 0;
+}
+
+.newsletter {
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: #666666;
+    margin-right: 20px;
+}
+
+.newsletter h2 {
+    font-size: 18px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.subscribe {
+    margin-left: 20px;
+}
+
+.subscribe-wrapper {
+    display: flex;
+    padding-top: 10px;
+}
+
+.subscribe .subscribe-email{
+    height: 50px;
+    width: 370px;
+    border: solid 1px #e8e8e8;
+    background: transparent;
+    padding: 0 0 0 15px;
+    box-sizing: border-box;
+}
+
+.subscribe .btn-subscribe{
+    height: 50px;
+    width: 200px;
+    box-sizing: border-box;
+    border: solid 1px #be926f;
+    background: url("images/airplan.png") no-repeat 15px 10px;
+    margin-left: 15px;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 0 0 15px;
+    vertical-align: middle;
+}
+
+/*----------------блок "наші переваги"-------------------*/
+.box-for-advantage {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px;
+    line-height: 40px;
+    vertical-align: middle;
+    background: #f8f8f8;
+}
+
+.box-for-advantage>div {
+    padding-left: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.free-shipping {
+    background: url("images/airplan1.png") no-repeat;
+}
+
+.customer-support {
+    background: url("images/customer.png") no-repeat;
+}
+
+.money-back {
+    background: url("images/15-days-back.png") no-repeat;
+}
+
+.help-center {
+    background: url("images/24-7-tel.png") no-repeat;
+}
+
+/*-------------------------------блок "наші переваги"-------------------------------------*/
+.box-for-contact-us {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 45px 0 60px 0;
+}
+
+.contact-us-call {
+    background: url("images/iPhone.png") no-repeat;
+    background-position-x: center;
+    padding-top: 75px;
+}
+
+.contact-us-call span {
+    font-size: 24px;
+    color: #232323;
+}
+
+.contact-us-location {
+    background: url("images/location.png") no-repeat;
+    background-position-x: center;
+    padding-top: 75px;
+}
+
+.contact-us-location  span {
+    font-size: 14px;
+    color: #666666;
+}
+
+.contact-us-mail {
+    background: url("images/doble-mail.png") no-repeat;
+    background-position-x: center;
+    padding-top: 75px;
+}
+
+.contact-us-mail a {
+    font-size: 14px;
+    color: #be926f;
+    text-decoration: none;
+}
+
+.box-for-contact-us h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 25px;
 }

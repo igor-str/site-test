@@ -1,0 +1,36 @@
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8125rem;
+    color: #999999;
+}
+
+.box-for-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.social-links {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links a {
+    width: 19px;
+    height: 19px;
+}
+
+.twitter {
+    background: url("images/twitter.png") no-repeat center;
+    margin-right: 35px;
+}
+
+.google-plus {
+    background: url("images/google.png") no-repeat center;
+    margin-right: 35px;
+}
+
+.facebook {
+    background: url("images/facebook.png") no-repeat center;
+}

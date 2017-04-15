@@ -1,9 +1,10 @@
 @import "header.css";
 @import "main.css";
+@import "footer.css";
 
 html {
     font-family: 'Montserrat', sans-serif;
-    background: #f7f7f7; /* Цвет фона */
+    background: #ffffff; /* Цвет фона */
 }
 
 body {
