@@ -71,6 +71,21 @@ main {
     position: relative; /*для позиціонування блоку по наведенні мишки*/
 }
 
+.photo-for-products .count-sale {
+    position: absolute;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: #be926f;
+    top: -21px;
+    right: -21px;
+    border-radius: 50% 50% 50% 50%;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 42px;
+}
+
 .product-items .product-price{
     font-size: 20px;
     color: #be926f;
@@ -126,6 +141,7 @@ main {
     border: solid 1px #be926f;
     content: "";
 }
+
 .wrapper-links .like {
      background: url("images/like.png") no-repeat center;
  }
@@ -261,6 +277,7 @@ main {
 }
 .wrapper-slider-caruselle {
     display: flex;
+    position: relative;
 }
 
 .slider-caruselle-items {
@@ -316,10 +333,59 @@ main {
     transition: 1s;
 }
 
+.slick-prev { /*стилізація стрілок слайдера*/
+    position: absolute;
+    z-index: 2;
+    background: url("images/slider-left.png");
+    width: 13px;
+    height: 23px;
+    top: -30px;
+    left: 8px;
+}
+
+.slick-next { /*стилізація стрілок слайдера*/
+    position: absolute;
+    z-index: 2;
+    background: url("images/slider-right.png");
+    width: 13px;
+    height: 23px;
+    top: -30px;
+    right: 8px;
+}
+
+.slick-prev:hover, .slick-prev:focus { /*відміняє зникнення стрілки*/
+    background: url("images/slider-left.png");
+}
+
+.slick-next:hover, .slick-next:focus { /*відміняє зникнення стрілки*/
+    background: url("images/slider-right.png");
+}
+
+.slick-prev::before { /*для відміни стандартних стрілок слайдера*/
+    content: "Prew";
+    color: #999999;
+    position: absolute;
+    font-size: 13px;
+    bottom: 5px;
+    left: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+
+.slick-next::before { /*для відміни стандартних стрілок слайдера*/
+    content: "Next";
+    color: #999999;
+    position: absolute;
+    font-size: 13px;
+    bottom: 5px;
+    right: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
 
 
 
-/*блок для відгуків*/
+    /*блок для відгуків*/
 .box-for-testimonials{
     background: #292929;
     display: flex;
